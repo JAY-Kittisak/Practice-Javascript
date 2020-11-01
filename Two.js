@@ -18,3 +18,20 @@ for (let i = 1; i<= 12; i++) {
     let answer = i ** 2;
     console.log(i,answer);
 }
+
+// คำสั่งที่ใช้ได้ใน loop
+// -continue ถ้าเจอ continue โปรแกรมจะทำการข้าม loop นั้นไปเลย
+// -break 
+for (let i = 1; i<= 12; i++) {
+    
+    //ถ้า i หาร 2 ลงตัวก็จะข้ามไป หรือ  i = เลขคู่
+    if (i%2 === 0){
+        continue;
+    }
+    //ถ้า  i หาร 10 ลงตัวให้ทำการ break
+    if (i%10 === 0){
+        break;
+    }
+    let answer = i ** 2;
+    console.log(i,answer);
+}
