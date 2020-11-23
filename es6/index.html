@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // TODO: global
+        var name = "kittisak";
+        var age = 25;
+
+        if (true) {
+            // TODO: global
+            var name = "global";
+            // TODO: block-scope
+            let age = 20;
+            var nicknameGlobal = "Global";
+            const nicknameBlockScope = "BlockScope";
+
+            console.log(name);
+            console.log(age);
+        }
+
+        console.log(name);
+        console.log(age);
+        console.log(nicknameGlobal);
+        
+        // TODO: Function-Scope คือ var จะไม่เป็น Global แล้ว
+        var nameInFc = "jojo"
+        function myFunc() {
+            var nameInFc = "FC Scope"
+            console.log(nameInFc)
+        }
+        myFunc()
+        console.log(nameInFc)
+        console.log(nicknameBlockScope);
+
+
+    </script>
+</body>
+</html>
