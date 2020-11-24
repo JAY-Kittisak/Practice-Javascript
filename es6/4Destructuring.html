@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.Destructuring</title>
+</head>
+<body>
+ <!-- TODO: Javascript ES06 การนำตัวแปรจาก Object และ Array มาสร้างเป็นตัวแปรได้เลย -->
+
+    <script>
+// FIXME: Destructuring ในส่วนของ Array
+        // TODO: ก่อนมี ES06
+
+        const points = [20,30,40];
+
+        const val1 = points[0];
+        const val2 = points[1];
+        const val3 = points[2];
+
+        console.log(val1, val2, val3);
+
+        // TODO: แบบ ES06
+
+        const pointsES06 = [50, 60, 70];
+        const [val1ES06, val2ES06, val3ES06] = pointsES06;
+        console.log(val1ES06, val2ES06, val3ES06);
+
+// FIXME: Destructuring ในส่วนของ Object
+
+        // TODO: ก่อนมี ES06
+        const car = {
+            type: 'Honda',
+            color: 'Silver',
+            model: '2020'
+        }
+        const type = car.type;
+        const color = car.color;
+        const model = car.model;
+
+        console.log(type, color, model);
+
+        // TODO: แบบ ES06
+        const carES06 = {
+            typeES06: 'Honda-ES06',
+            colorES06: 'Silver-ES06',
+            modelES06: '2020-ES06'
+        }
+        const { typeES06, colorES06, modelES06 } = carES06;
+        console.log( typeES06, colorES06, modelES06);
+
+
+    </script>
+
+    
+</body>
+</html>

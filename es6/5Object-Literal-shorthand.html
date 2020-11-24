@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.Object-Literal-shorthand</title>
+</head>
+<body>
+    <!-- เอาค่าจากตัวแปรมา สร้างค่าของ Property ให้กับ Object-->
+    <script>
+        
+        const type = 'Honda';
+        const color = 'Silver';
+        const model = 2020
+
+        const car = {
+            // TODO: ก่อนมี ES06
+            // type: type,
+            // color: color,
+            // model: model
+
+            // TODO: แบบ ES06
+            type,
+            color,
+            model
+
+        }
+
+        console.log(car);
+
+
+    </script>
+</body>
+</html>
