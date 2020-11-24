@@ -1,7 +1,7 @@
 const person = {
     name: 'Varayut',
-    address: {
-        city: 'Bangkok'
+    addressf: {
+        cit1y: 'Bangkok'
     },
     address1: 'test',
     address2: {

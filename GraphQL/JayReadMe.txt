@@ -1,4 +1,6 @@
 npm install graphql-yoga nodemon uuid
+	"scripts": {
+    "dev": "nodemon src/index.js",
 
 
 GraphQL 

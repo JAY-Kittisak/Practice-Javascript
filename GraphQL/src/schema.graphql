@@ -1,0 +1,35 @@
+# กำหนด schema เครืองหมาย ! คือ ให้เป็น String! Int! เท่านั้น
+#  [!]! ให้ Return เป็น Array เปล่า ห้าม Return เป็น Null
+
+# ในส่วนของ mutation ใน addUser(name: String!, age: Int!) จำเป็นต้องใช้ซื่อและอายุด้วย
+
+type Query {
+  name: String!
+  age: Int!
+  isSingle: Boolean
+  numbers: [Int!]!
+  LocationObject: Location
+  users: [UserOIA!]!
+}
+
+type Location {
+  state: String!
+  city: String!
+}
+
+type UserOIA {
+  id: ID!
+  name: String!
+  age: Int!
+  locationU: Location
+}
+
+type Mutation {
+  addUserOIA(name: String!, age: Int!): [UserOIA!]!
+  updateUserOIA(id: ID!, name: String, age: Int): UserOIA!
+  deleteUserOIA(id: ID!): UserOIA!
+}
+
+type Subscription {
+  updateSC: UserOIA!
+}

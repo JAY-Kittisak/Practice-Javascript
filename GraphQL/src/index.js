@@ -47,19 +47,16 @@ const typeDefs = `
         LocationObject: Location
         usersObjectInArray: [UserOIA!]! 
     }
-
     type Location {
         state: String!
         city: String!
     }
-
     type UserOIA {
         id: ID!
         name: String!
         age: Int!
         locationU: Location 
     }
-
     type Mutation {
         addUserOIA(name: String!, age: Int!): [UserOIA!]!
         updateUserOIA(id: ID!, name: String, age: Int): UserOIA!
