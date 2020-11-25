@@ -1,0 +1,30 @@
+{
+    "key": "Value",
+    "typeVariable": "1.String , 2.Integer-Number, 3.Decimal-Number, 4.Boolean, 5.Array, 6.Object",
+    "typeInteger-Number": 10,
+    "typeDecimal-Number": 10.5,
+    "typeBooleanT": true,
+    "typeBooleanF": false,
+    "typeArray": [
+        "CPU i5 10400F",
+        "SSD970-EVO 250GB",
+        "DDR4-2666/8GB"
+    ],
+    "pet-Object": {
+        "namePet": "money",
+        "type": "cay",
+        "age": 3
+    },
+    "pet-Object-Array": [
+        {
+            "namePet": "money",
+            "type": "cay",
+            "age": 3
+        },
+        {
+            "namePet": "money",
+            "type": "cay",
+            "age": 3
+        }
+    ]
+}

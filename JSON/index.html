@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data = `
+        {
+            "key": "Value",
+            "typeVariable": "1.String , 2.Integer-Number, 3.Decimal-Number, 4.Boolean, 5.Array, 6.Object, 7.Array_Object",
+            "typeInteger-Number": 10,
+            "typeDecimal-Number": 10.5,
+            "typeBooleanT": true,
+            "typeBooleanF": false,
+            "typeArray": ["CPU i5 10400F", "SSD970-EVO 250GB", "DDR4-2666/8GB"],
+            "pet_Object": {
+                "namePet": {
+                    "money1": "money1",
+                    "money2": "money2",
+                    "money3": "money3"
+                },
+                "type": "cay",
+                "age": 3
+            },
+            "pet_Array_Object": [
+                {
+                "namePet": "money1",
+                "type": "cay",
+                "age": 3
+                },
+                {
+                "namePet": "money2",
+                "type": "cay",
+                "age": 3
+                }
+            ] 
+        }`
+        
+        console.log(JSON.parse(data).typeArray[1])   
+        console.log(JSON.parse(data).pet_Object.namePet.money3)   
+        console.log(JSON.parse(data).pet_Object_Array[0]    )   
+        console.log(data)   
+        alert(JSON.parse(data).typeVariable)
+    </script>
+    
+</body>
+</html>
