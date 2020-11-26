@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.Arrow Function</title>
+</head>
+<body>
+    <script>
+        // TODO: Function ปกติ
+        function myFunction() {
+            return 'Hello World'
+        }
+
+        // TODO: Arrow ไม่มีค่า Parameter
+        const nameNoPr = () => 'Hello John'
+        console.log(nameNoPr())
+        
+        // TODO: Arrow มี Parameter แค่ตัวเดียว ใส่ () ก็ได้ไม่ใส่ก็ได้
+        const namePr1 = val => `Hello  ${val}`;
+        console.log(namePr1('jay'))
+        
+        // TODO: ถ้า Code เรามีมากว่า 1 บรรทัดต้องใช่ {} ด้วย
+        const namePr2 = (val1, val2) => {
+            const myName = val1.toUpperCase();
+            return `Hello, ${myName} ${val2}`;
+        };
+        console.log(namePr1('jojo'))
+        console.log(namePr2('big-jojo', 'test'))
+        </script>
+</body>
+</html>

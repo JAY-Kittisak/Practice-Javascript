@@ -15,7 +15,7 @@
         "type": "cay",
         "age": 3
     },
-    "pet-Object-Array": [
+    "pet-Array-Object": [
         {
             "namePet": "money",
             "type": "cay",

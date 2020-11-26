@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.Spread&React-Operators</title>
+</head>
+<body>
+    <!-- Spread Operators ทำให้เราสามารถรวมข้อมูล หรือ กระจายข้อมูล -->
+    <script>
+        // TODO: ในส่วนของ Array
+        const name = ['John', 'Jane', 'Joe'];
+        const name2 = ['Josh', 'Jinny'];
+        const mergedName = [...name, ...name2];
+
+        console.log('***ปกติ***',name);
+        console.log('***ใช้ Spread Operators ในการกระจายข้อมูล จาก Array เป็น String***',...name);
+        console.log('*** รวม Array ***', mergedName);
+
+        // TODO: ในส่วนของ Object
+        const info = {
+            name: "John",
+            age: 30,
+            married: false
+        }
+        const newInfo = {
+            car: "lamborghini",
+            color: "red"
+        }
+        const mergedInfo = {...info, ...newInfo};
+        console.log('*** รวม Object ***',mergedInfo);
+
+         // TODO: ใช้กับ Function จะเรียกว่า RedParameter
+         const mergedObj = (...obj) => ( {...obj} );
+         console.log('*** รวม Object ด้วย Function ***',mergedObj(info, newInfo));
+    </script>
+</body>
+</html>
