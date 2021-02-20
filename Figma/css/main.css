@@ -20,11 +20,48 @@ header {
 
 nav {
     height: 60px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+nav ul {
+    /* ให้มันอยู่บรรทัดเดียวกัน */
+    display: flex;
+    /* ลบสัญลักษณ์ list  ออก*/
+    list-style: none;
+    width: 255px;
+    /* เส้นขอบ */
+    /* border: 1px solid rebeccapurple; */
+    justify-content: space-between;
+}
 
+nav ul li a {
+    /* เส้นใต้ */
+    text-decoration: none;
+}
+
+.logo h1 {
+    color: #37447e;
+    font-size: 26px;
+}
+
+.nav-btn {
+    text-align: center;
+    width: 160px;
+    background: #111b47;
+    height: 26px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
 
